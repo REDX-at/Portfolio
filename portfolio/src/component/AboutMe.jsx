@@ -13,7 +13,7 @@ export default function AboutMe() {
               <span className="text-[280px] font-bold ">About Me</span>
             </div>
             <div className="w-[60%] ">
-              <p className="text-4xl leading-relaxed">
+              <p className="text-4xl leading-loose">
                 I am a professional{" "}
                 <span
                   className={`bg-${Colors.accent600} text-white rounded-full py-1 px-4`}
@@ -76,7 +76,7 @@ export default function AboutMe() {
             alt="Aimen Taoussi"
             className="w-full h-full object-cover"
           />
-          <h1 className="text-white  text-[200px] w-[100%] leading-[12rem] font-bold pl-3 absolute top-0 left-0 z-1">
+          <h1 className="text-white  text-[180px] w-[100%] leading-[12rem] mx-12 mt-4 absolute top-0 left-0 z-1 font-righteous opacity-100">
             AIMEN TAOUSSI
           </h1>
         </div>
