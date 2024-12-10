@@ -9,7 +9,7 @@ export default function Header() {
     setActive(item);
   };
   return (
-    <div className="h-20 grid grid-cols-5 gap-2 mt-10 text-center fixed top-0 left-0 w-full z-10">
+    <div className="h-20 grid grid-cols-5 gap-2 mt-10 text-center fixed top-0 left-0 w-full z-30">
       <span
         className={`self-center justify-self-center font-bold text-xl text-white bg-black py-6 rounded-full w-80 opacity-100 shadow-md`}
       >
@@ -37,7 +37,7 @@ export default function Header() {
         ))}
       </div>
       <button
-        className={`bg-black w-52 mx-auto rounded-full text-white opacity-100 shadow-md`}
+        className={`bg-white w-52 mx-auto rounded-full text-black opacity-100 shadow-md`}
       >
         <div className="flex justify-center gap-6 font-bold items-center">
           <span>Hire me</span>
