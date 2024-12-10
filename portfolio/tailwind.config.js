@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         righteous: ["Righteous", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
