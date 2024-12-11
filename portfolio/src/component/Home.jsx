@@ -3,19 +3,37 @@ import CercleMe from "../imgs/CercleMe.png";
 import Icon from "../utils/Utils";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 
 AOS.init();
 
 export default function Home() {
   return (
     <div className="relative">
-      {" "}
       <img
         src={OffMan}
         alt="Pictures of Me"
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-20 w-[1050px]"
       ></img>
       <div className="bg-black">
+        <div className="h-20 grid grid-cols-5 gap-2 pt-10 text-center absolute w-full">
+          <span
+            className={`self-center justify-self-center font-bold text-xl text-white bg-black py-6 rounded-full w-80 opacity-100 shadow-md`}
+          >
+            Designed By{" "}
+            <span className={`bg-red-600 text-white px-4 rounded-full py-1`}>
+              Redx
+            </span>
+          </span>
+          <button
+            className={`bg-white w-52 mx-auto rounded-full text-black opacity-100 shadow-md col-start-5 col-end-6 cursor-pointer`}
+          >
+            <div className="flex justify-center gap-6 font-bold items-center">
+              <span>Hire me</span>
+              {Icon.download}
+            </div>
+          </button>
+        </div>
         <div className="h-screen grid grid-cols-2 pt-72 pb-52">
           {/* // first Grid */}
           <div
@@ -59,7 +77,7 @@ export default function Home() {
             data-aos-delay="500"
           >
             <div className="flex flex-col">
-              <div className="text-white text-2xl font-bold flex bg-red-600 py-3 px-6 rounded-l-full items-center gap-5 just">
+              <div className="text-white text-2xl font-bold flex bg-red-600 py-3 px-6 rounded-l-full items-center gap-5 justify-between">
                 <h1>SKILLS</h1>
                 {Icon.skills}
               </div>
@@ -72,23 +90,25 @@ export default function Home() {
           </div>
         </div>
         <div className="flex gap-10 justify-self-end absolute bottom-6 left-28">
-          <a href="https://www.fiverr.com/taaimen">{Icon.fiver}</a>
-          <a href="https://dribbble.com/Redx-at">{Icon.dribbble}</a>
+          <a href="https://www.fiverr.com/taaimen" target="_blank">
+            {Icon.fiver}
+          </a>
+          <a href="https://dribbble.com/Redx-at" target="_blank">
+            {Icon.dribbble}
+          </a>
         </div>
         <div className="flex gap-10 absolute bottom-6 right-36">
-          <a href="https://www.linkedin.com/in/aimen-taoussi-251684280/">
+          <a
+            href="https://www.linkedin.com/in/aimen-taoussi-251684280/"
+            target="_blank"
+          >
             {Icon.linkedin}
           </a>
-          <a href="https://github.com/REDX-at">{Icon.github}</a>
+          <a href="https://github.com/REDX-at" target="_blank">
+            {Icon.github}
+          </a>
         </div>
       </div>
     </div>
   );
-}
-
-{
-}
-// cercle with html
-{
-  /* <div className="w-[1000px] bg-red-600 h-[1000px] rounded-full blur-lg opacity-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-20"></div> */
 }

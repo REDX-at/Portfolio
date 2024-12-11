@@ -22,23 +22,29 @@ export default function AboutMe() {
                 Hi Im Aimen Taoussi AKA
                 <span className="font-bold text-red-600">(Redx)</span> I am a
                 professional{" "}
-                <span
+                <a
+                  href="https://en.wikipedia.org/wiki/Graphic_design#:~:text=Graphic%20design%20is%20a%20profession,and%20of%20the%20fine%20arts."
+                  target="_blank"
                   className={`text-red-600 font-bold rounded-full py-1 px-4`}
                 >
                   Graphic Designer
-                </span>{" "}
+                </a>{" "}
                 ,{" "}
-                <span
+                <a
+                  href="https://en.wikipedia.org/wiki/User_experience_design"
+                  target="_blank"
                   className={`text-red-600 font-bold rounded-full py-1 px-4`}
                 >
                   UI/UX Designer
-                </span>
+                </a>
                 , and{" "}
-                <span
+                <a
+                  href="https://en.wikipedia.org/wiki/Front-end_web_development"
+                  target="_blank"
                   className={`text-red-600 font-bold rounded-full py-1 px-4`}
                 >
                   Front-End Developer
-                </span>{" "}
+                </a>{" "}
                 with a passion for creating visually compelling designs and
                 intuitive digital experiences. I specialize in transforming
                 ideas into impactful visuals and functional interfaces,
