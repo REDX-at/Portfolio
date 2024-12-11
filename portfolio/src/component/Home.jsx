@@ -1,6 +1,10 @@
 import OffMan from "../imgs/OffMan.png";
 import CercleMe from "../imgs/CercleMe.png";
 import Icon from "../utils/Utils";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 export default function Home() {
   return (
@@ -14,14 +18,19 @@ export default function Home() {
       <div className="bg-black">
         <div className="h-screen grid grid-cols-2 pt-72 pb-52">
           {/* // first Grid */}
-          <div className="text-white ml-32 flex flex-col justify-between z-20">
+          <div
+            className="text-white ml-32 flex flex-col justify-between z-20"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div>
               <h1 className="text-9xl font-poppins font-bold leading-none">
-                Hi , I'm Aimen Taoussi
+                Hi, I'm Aimen Taoussi
               </h1>
               <div className="mt-5">
                 <span className="text-2xl font-bold bg-red-600 rounded-full px-4 py-3">
-                  Designer & Devloper
+                  Designer & Developer
                 </span>
               </div>
             </div>
@@ -41,13 +50,14 @@ export default function Home() {
                 <li>2 Front End Porject</li>
               </ul>
             </div>
-            <div className="flex gap-10 justify-self-end absolute bottom-6">
-              <a href="https://www.fiverr.com/taaimen">{Icon.fiver}</a>
-              <a href="https://dribbble.com/Redx-at">{Icon.dribbble}</a>
-            </div>
           </div>
           {/* // seconde Grid */}
-          <div className="ml-[500px] flex flex-col gap-16">
+          <div
+            className="ml-[500px] flex flex-col gap-16"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div>
               <div className="text-white text-2xl font-bold flex bg-red-600 py-3 px-6 rounded-full items-center gap-5 w-44">
                 <h1>SKILLS</h1>
@@ -59,13 +69,17 @@ export default function Home() {
               </p>
             </div>
             <img src={CercleMe} className="w-[400px] self-center"></img>
-            <div className="flex gap-10 absolute bottom-6 right-36">
-              <a href="https://www.linkedin.com/in/aimen-taoussi-251684280/">
-                {Icon.linkedin}
-              </a>
-              <a href="https://github.com/REDX-at">{Icon.github}</a>
-            </div>
           </div>
+        </div>
+        <div className="flex gap-10 justify-self-end absolute bottom-6 left-28">
+          <a href="https://www.fiverr.com/taaimen">{Icon.fiver}</a>
+          <a href="https://dribbble.com/Redx-at">{Icon.dribbble}</a>
+        </div>
+        <div className="flex gap-10 absolute bottom-6 right-36">
+          <a href="https://www.linkedin.com/in/aimen-taoussi-251684280/">
+            {Icon.linkedin}
+          </a>
+          <a href="https://github.com/REDX-at">{Icon.github}</a>
         </div>
       </div>
     </div>

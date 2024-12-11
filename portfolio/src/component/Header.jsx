@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Icon, { Colors } from "../utils/Utils";
 
-export default function Header() {
+export default function Header({ setFade }) {
   const arrHeader = ["Home", "About me", "Product", "Contact Me"];
   const [active, setActive] = useState("Home");
 
   const onTap = (item) => {
     setActive(item);
+    setFade(item);
   };
   return (
     <div className="h-20 grid grid-cols-5 gap-2 mt-10 text-center fixed top-0 left-0 w-full z-30">
