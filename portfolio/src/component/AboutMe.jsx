@@ -7,7 +7,12 @@ export default function AboutMe() {
     <div>
       {" "}
       <div className="grid grid-cols-6">
-        <div className="h-screen col-span-4 text-center flex flex-col items-center justify-center">
+        <div
+          className="h-screen col-span-4 text-center flex flex-col items-center justify-center"
+          // data-aos="fade-right"
+          // data-aos-duration="1000"
+          // data-aos-delay="500"
+        >
           <div className="flex flex-col items-center justify-center gap-16">
             <div>
               <span className="text-[280px] font-bold ">About Me</span>
@@ -18,19 +23,19 @@ export default function AboutMe() {
                 <span className="font-bold text-red-600">(Redx)</span> I am a
                 professional{" "}
                 <span
-                  className={`bg-${Colors.accent600} text-white rounded-full py-1 px-4`}
+                  className={`text-red-600 font-bold rounded-full py-1 px-4`}
                 >
                   Graphic Designer
                 </span>{" "}
                 ,{" "}
                 <span
-                  className={`bg-${Colors.accent600} text-white rounded-full py-1 px-4`}
+                  className={`text-red-600 font-bold rounded-full py-1 px-4`}
                 >
                   UI/UX Designer
                 </span>
                 , and{" "}
                 <span
-                  className={`bg-${Colors.accent600} text-white rounded-full py-1 px-4`}
+                  className={`text-red-600 font-bold rounded-full py-1 px-4`}
                 >
                   Front-End Developer
                 </span>{" "}
@@ -72,7 +77,12 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="h-screen rounded-l-[100px] col-span-2  overflow-hidden relative">
+        <div
+          className="h-screen rounded-l-[100px] col-span-2  overflow-hidden relative"
+          // data-aos="fade-left"
+          // data-aos-duration="1000"
+          // data-aos-delay="500"
+        >
           <img
             src={Man2}
             alt="Aimen Taoussi"

@@ -58,12 +58,12 @@ export default function Home() {
             data-aos-duration="1000"
             data-aos-delay="500"
           >
-            <div>
-              <div className="text-white text-2xl font-bold flex bg-red-600 py-3 px-6 rounded-full items-center gap-5 w-44">
+            <div className="flex flex-col">
+              <div className="text-white text-2xl font-bold flex bg-red-600 py-3 px-6 rounded-l-full items-center gap-5 just">
                 <h1>SKILLS</h1>
                 {Icon.skills}
               </div>
-              <p className="text-white text-2xl pr-32 mt-6 font-semibold">
+              <p className="text-white text-xl mt-6 font-semibold self-center">
                 A versatile designer and developer specializing in branding,
                 intuitive UI/UX, and responsive web solutions.
               </p>

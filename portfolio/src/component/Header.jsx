@@ -1,13 +1,12 @@
 import { useState } from "react";
 import Icon, { Colors } from "../utils/Utils";
 
-export default function Header({ setFade }) {
+export default function Header() {
   const arrHeader = ["Home", "About me", "Product", "Contact Me"];
   const [active, setActive] = useState("Home");
 
   const onTap = (item) => {
     setActive(item);
-    setFade(item);
   };
   return (
     <div className="h-20 grid grid-cols-5 gap-2 mt-10 text-center fixed top-0 left-0 w-full z-30">
@@ -25,7 +24,7 @@ export default function Header({ setFade }) {
         {arrHeader.map((item) => (
           <span
             key={item}
-            className={`cursor-pointer ${active === item ? "" : "blur-[1px]"}`}
+            className={`cursor-pointer ${active === item ? "" : "opacity-50"}`}
             onClick={() => {
               onTap(item);
               document
